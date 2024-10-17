@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>All Comments</title>
+</head>
+<body>
+    <h1>All Comments</h1>
+    <ul>
+        <li th:each="comment : ${comments}">
+            <p th:text="${comment.content}"></p> 
+        </li>
+    </ul>
+    <a>Create New Comment</a> 
+</body>
+</html>
